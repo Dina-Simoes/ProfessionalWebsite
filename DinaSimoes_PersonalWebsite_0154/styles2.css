@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin: auto; /* Centraliza a container */
+    background: white; /* Fundo branco para o conteúdo */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Padding interno */
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: -50px;
+}
+
+.profile-header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-header h1 {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.profile-header p {
+    color: black;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.section-item {
+    margin-bottom: 20px;
+    text-align: left; /* Garante que o texto fique alinhado à esquerda */
+}
+
+.section-item h3 {
+    font-size: 20px;
+    color: #0073b1;
+}
+
+.section-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #0073b1;
+}
+
+.social-links a:hover {
+    color: #005582;
+}
+
+.image-container {
+    width: 150px; /* Largura da div */
+    height: auto; /* Altura automática com base no conteúdo */
+    margin: 20px 0 0 0; /* Margem automática à esquerda para empurrar a imagem para a direita */
+    text-align: left; /* Alinha a imagem à direita dentro da div */
+}
+
+.image-container img {
+    width: 100%; /* A imagem ocupará 100% da largura da div */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas na imagem */
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Imagem de background na secção profile-header */
+.profile-header {
+    position: relative;
+    height: 600px; /* Defina a altura desejada */
+    border-radius: 20px; /* Define o arredondamento dos cantos *//* Isso é importante para que o conteúdo da div respeite o border-radius */
+    overflow: hidden; /* Isso é importante para esconder a parte "cortada" da imagem */
+    padding-top: 50px; /* Espaço acima para simular o corte */
+    padding-bottom: 0px; /* Espaço abaixo para simular o corte */
+    box-sizing: border-box;
+}
+
+.background-image {
+    position: absolute;
+    top: -100px; /* Move a imagem 100px para cima */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/campo_sol.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7; /* Transparência da imagem de fundo */
+    z-index: 1; /* Fica atrás do conteúdo */
+    border-radius: 1.5%;
+}
+
+.profile-content {
+    position: relative;
+    z-index: 2; /* Fica acima da imagem de fundo */
+    text-align: center;
+    color: black; /* Você pode ajustar essa cor dependendo da visibilidade */
+
+}
+
+.profile-content img {
+    border-radius: 50%; /* Ajusta a imagem do perfil */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.social-links a {
+    display: inline-block; /* Exibir como bloco */
+    margin-right: 15px; /* Espaço entre links */
+    color: #007BFF; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.social-links a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
