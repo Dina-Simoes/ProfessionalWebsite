@@ -1,5 +1,5 @@
 {
     "rewrites": [
-        {"source": "/(.*)", "destination": "/DinaSimoes_PersonalWebsite_0154.html"}
+        {"source": "/(.*)", "destination": "DinaSimoes_PersonalWebsite_0154/DinaSimoes_PersonalWebsite_0154.html"}
     ]
 }
